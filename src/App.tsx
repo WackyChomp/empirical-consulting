@@ -1,9 +1,10 @@
 import Navbar from '@/scenes/navbar';
 import { useState } from 'react';
+import { SelectedPage } from './shared/types';
 
 function App() {
 
-  const [selectedPage, setSelectedPage] = useState<string>('home');     // ensures string type
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);     // ensures enum string type
 
   return (
     <div className="app" bg-gray-20>
