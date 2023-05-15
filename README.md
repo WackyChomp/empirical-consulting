@@ -74,6 +74,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+Need help finding a direction, fleshing out ideas, or searching for purpose?
+<br><br>
+We all need a helping hand once in a while. Why internalize the negativity and bear the burden on your own when there are others out there who might share similar experiences or sentiments. We all have to start somewhere and this could be your first step of the journey. Bring that curiosity and determination here because everyone else will be exhibiting those qualities.
+<br><br>
+Here at Empirical Consulting, we bridge the gap between different ranges of experiences whether you are a beginner or 10+ year professional.
+<br><br>
+As long you have questions, we will continue to have answers 🔎
+<br><br>
 
 <u><b>Project Purpose / Vision:</b></u>
 * Sleek and responsive design for satisfying seamless user experience
