@@ -29,7 +29,8 @@ function App() {
         selectedPage={selectedPage} 
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
-      />,App be right here
+      />
+      <p className='text-white'>Easter Egg OOC~~~~~ App be right here</p>
       <Home setSelectedPage={setSelectedPage} />
     </div>
   )
