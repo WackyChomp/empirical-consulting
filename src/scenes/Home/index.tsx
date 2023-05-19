@@ -2,6 +2,7 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 import { SelectedPage } from '@/shared/types';
 import ActionButton from '@/shared/ActionButton';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { motion } from 'framer-motion';
 
 
 type Props = {
@@ -18,11 +19,24 @@ const Home = ({ setSelectedPage }: Props) => {
 			className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
 		>
 			{/* Image and Main Header */}
-			<div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
+			<motion.div 
+				className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
+				onViewportEnter={() => setSelectedPage(SelectedPage.Home)}	// navbar item highlight when scrolling to section
+			>
 				{/* Main Header */}
 				<div className="z-10 mt-32 md:basis-3/5">
 					{/* Headings */}
-					<div className="md:-mt-20">
+					<motion.div 
+						className="md:-mt-20"
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: true, amount: 0.5, }}
+						transition={{ duration: 1 }}
+						variants={{
+							hidden: { opacity:0, x:-50 },
+							visible: { opacity:1, x:0 }
+						}}
+					>
 						{/* Relative tag */}
 						<div className="relative">
 							<div className="before:absolute before:-top-20 before:-left-20 beofre:z-[-1] md:before:content-evolvetext">		{/* hides 'evolve' text on md screen */}
@@ -35,9 +49,19 @@ const Home = ({ setSelectedPage }: Props) => {
 							Turn your thoughts and ideas into actionable steps towards your life goals.
 							Get the help you deserve because it is a necessity and you are worth it!
 						</p>
-					</div>
+					</motion.div>
 					{/* Call to Action (Button) */}
-					<div className="mt-8 flex items-center gap-8">
+					<motion.div 
+						className="mt-8 flex items-center gap-8"
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: true, amount: 0.5, }}
+						transition={{ delay: 0.2, duration: 1 }}
+						variants={{
+							hidden: { opacity:0, x:-50 },
+							visible: { opacity:1, x:0 }
+						}}
+					>
 						<ActionButton setSelectedPage={setSelectedPage}>
 							Join Now
 						</ActionButton>
@@ -48,7 +72,7 @@ const Home = ({ setSelectedPage }: Props) => {
 						>
 							<p>Learn More</p>
 						</AnchorLink>
-					</div>
+					</motion.div>
 				</div>
 
 				{/* Image */}
@@ -56,7 +80,7 @@ const Home = ({ setSelectedPage }: Props) => {
 				md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
 					<img className="rounded-3xl" src="https://e0.pxfuel.com/wallpapers/512/629/desktop-wallpaper-cosmic-background-for-pc-q-best.jpg" alt="homepage-graphic" />
 				</div>
-			</div>
+			</motion.div>
 
 			{/* Sponsors */}
 			{isAboveMediumScreens && (
