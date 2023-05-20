@@ -14,15 +14,13 @@ const Home = ({ setSelectedPage }: Props) => {
 
 
   return (
-  	<section 
-			id='home'
-			className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
-		>
+  	<section id='home' className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'>
 			{/* Image and Main Header */}
 			<motion.div 
 				className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
 				onViewportEnter={() => setSelectedPage(SelectedPage.Home)}	// navbar item highlight when scrolling to section
 			>
+				{/*----------------------- Left -----------------------*/}
 				{/* Main Header */}
 				<div className="z-10 mt-32 md:basis-3/5">
 					{/* Headings */}
@@ -50,6 +48,7 @@ const Home = ({ setSelectedPage }: Props) => {
 							Get the help you deserve because it is a necessity and you are worth it!
 						</p>
 					</motion.div>
+
 					{/* Call to Action (Button) */}
 					<motion.div 
 						className="mt-8 flex items-center gap-8"
@@ -75,14 +74,15 @@ const Home = ({ setSelectedPage }: Props) => {
 					</motion.div>
 				</div>
 
+				{/*----------------------- Right -----------------------*/}
 				{/* Image */}
-				<div className="flex basis-3/5 justify-center 
-				md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
+				<div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
 					<img className="rounded-3xl" src="https://e0.pxfuel.com/wallpapers/512/629/desktop-wallpaper-cosmic-background-for-pc-q-best.jpg" alt="homepage-graphic" />
 				</div>
 			</motion.div>
 
-			{/* Sponsors */}
+			{/*----------------------- Below Above -----------------------*/}
+			{/* Sponsors / hidden on medium and below sized screens */}
 			{isAboveMediumScreens && (
 				<div className="h-[150px] w-full bg-primary-100 py-10">
 					<div className="mx-auto w-5/6 ">
