@@ -1,5 +1,6 @@
 import Navbar from '@/scenes/navbar';
 import Home from './scenes/Home';
+import Benefits from './scenes/Benefits';
 
 import { useState, useEffect } from 'react';
 import { SelectedPage } from './shared/types';
@@ -32,6 +33,7 @@ function App() {
       />
       <p className='text-white'>Easter Egg OOC~~~~~ App be right here</p>
       <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   )
 }
