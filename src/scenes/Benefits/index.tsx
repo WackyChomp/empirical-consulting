@@ -2,13 +2,24 @@ import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import { SelectedPage, BenefitType } from "@/shared/types";
+import Benefit from "./Benefit";
 
 const benefits: Array<BenefitType> = [
 	{
 		icon: <HomeModernIcon className="h-6 w-6" />,
 		title: 'Onsite Facilities',
 		description: 'Our campus is full of life! It would be a shame to have all these equipments and no one to utilize them'
-	}
+	},
+	{
+		icon: <UserGroupIcon className="h-6 w-6" />,
+		title: 'Unique and Diverse Perspectives',
+		description: 'Here we have people from all walks of life. Believe it or not we all have stories to tell, we just need to learn how to tell them'
+	},
+	{
+		icon: <AcademicCapIcon className="h-6 w-6" />,
+		title: 'Experienced Professionals',
+		description: 'Our consultants have seen it all. They are able to leverage their previous obstacles to overcome future roadblocks'
+	},
 ]
 
 type Props = {
@@ -37,7 +48,7 @@ const Benefits = ({setSelectedPage}: Props) => {
 
 				{/* Benefits */}
 				<div className="md:flex items-center justify-between gap-8 mt-5">
-					{Benefits.map((benefit: BenefitType) => (
+					{benefits.map((benefit: BenefitType) => (
 						<Benefit
 							key = {benefit.title}
 							icon = {benefit.icon}
