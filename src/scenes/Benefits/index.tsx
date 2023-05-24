@@ -20,7 +20,14 @@ const benefits: Array<BenefitType> = [
 		title: 'Experienced Professionals',
 		description: 'Our consultants have seen it all. They are able to leverage their previous obstacles to overcome future roadblocks'
 	},
-]
+];
+
+const container = {
+	hidden: {},
+	visible: {
+		transition: { staggerChildren: 0.2 }
+	}
+}
 
 type Props = {
 	setSelectedPage: (value: SelectedPage) => void;
@@ -35,7 +42,18 @@ const Benefits = ({setSelectedPage}: Props) => {
 			<motion.div className=""
 				onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
 			>
-				<div className="md:my-5 md:w-3/5">
+				{/* Header */}
+				<motion.div 
+					className="md:my-5 md:w-3/5"
+					initial='hidden'
+					whileInView='visible'
+					viewport={{ once: true, amount: 0.5, }}
+					transition={{ delay: 0.2, duration: 1 }}
+					variants={{
+						hidden: { opacity:0, x:-50 },
+						visible: { opacity:1, x:0 }
+					}}
+				>
 					<HText>Unconventional guidance methodology</HText>
 					<p className='my-5 text-sm'>
 						Our consultancy leverages creativity and flexibility through professionals 
@@ -44,10 +62,16 @@ const Benefits = ({setSelectedPage}: Props) => {
 						along with being adaptable to unexpected roadblocks. The swift brainstorming
 						process allows you to quickly make mistakes and accelerate the feedback loop
 					</p>
-				</div>
+				</motion.div>
 
 				{/* Benefits */}
-				<div className="md:flex items-center justify-between gap-8 mt-5">
+				<motion.div 
+					className="md:flex items-center justify-between gap-8 mt-5"
+					initial = 'hidden'
+					whileInView='visible'
+					viewport={{ once: true, amount: 0.5 }}
+					variants={container}
+				>
 					{benefits.map((benefit: BenefitType) => (
 						<Benefit
 							key = {benefit.title}
@@ -57,7 +81,7 @@ const Benefits = ({setSelectedPage}: Props) => {
 							setSelectedPage = {setSelectedPage}
 						/>
 					))}
-				</div>
+				</motion.div>
 
 			</motion.div>
 		</section>
