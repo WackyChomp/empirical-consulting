@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import { SelectedPage, BenefitType } from "@/shared/types";
 import Benefit from "./Benefit";
+import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
 	{
@@ -82,6 +83,50 @@ const Benefits = ({setSelectedPage}: Props) => {
 						/>
 					))}
 				</motion.div>
+
+				{/* Graphics and Description */}
+				<div className="mt-16 item-center justify-between gap-20 md:mt-28 md:flex">
+					{/* Graphic */}
+					<img src="" alt="benefits-page-graphic" 
+						className="mx-auto"
+					/>
+
+					{/* Description Container */}
+					<div className="">
+						{/* Title */}
+						<div className="relative">
+							<div className="uppercase before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+								<HText>
+									Lets achieve more {' '}
+									<span className="text-primary-500">together</span>
+								</HText>
+							</div>
+						</div>
+						{/* Description */}
+						<div className="">
+							<p className="my-5">
+								Sure you can accomplish your goals alone but it will take longer as a trade off.
+								You are bound to encounter roadblocks out of your control and this is where we step 
+								in. Your options are to tread through unfamiliar territory to learn new skills or hire someone to do the "job".
+								These are choices that could cost precious time and ramp up expenses just because you have made an avoidable mistake.
+								or not consider every factor during your due diligence process.
+							</p>
+							<p className="my-5">
+								With us, you do not have to worry as we scour through every nook and cranny. Our services are 
+								either <b>free</b> or <b>affordable</b> depending on your situation. Our standards and commitment
+								to deliver platinum service and satisfaction.
+							</p>
+						</div>
+						{/* Button */}
+						<div className="relative mt-16">
+							<div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+								<ActionButton setSelectedPage={setSelectedPage}>
+									Join Us
+								</ActionButton>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</motion.div>
 		</section>
