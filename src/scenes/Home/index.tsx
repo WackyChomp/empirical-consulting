@@ -84,13 +84,20 @@ const Home = ({ setSelectedPage }: Props) => {
 			{/*----------------------- Below Above -----------------------*/}
 			{/* Sponsors / hidden on medium and below sized screens */}
 			{isAboveMediumScreens && (
-				<div className="h-[150px] w-full bg-primary-100 py-10">
+				<div className="h-[170px] w-full bg-primary-100 py-10">
 					<div className="mx-auto w-5/6 ">
-						<div className="flex w-3/5 items-center justify-between gap">
-							<img className="w-[150px]" src="https://cdn.worldvectorlogo.com/logos/pwc.svg" alt="" />
-							<img className="w-[150px]" src="https://cdn.worldvectorlogo.com/logos/deloitte-2.svg" alt="" />
-							<img className="w-[150px]" src="https://cdn.worldvectorlogo.com/logos/kpmg.svg" alt="" />
-							<img className="w-[150px]" src="https://cdn.worldvectorlogo.com/logos/ey.svg" alt="" />
+						<div className="flex items-center justify-between gap">
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/pwc.svg" alt="" />
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/deloitte-2.svg" alt="" />
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/kpmg-logo.svg" alt="" />
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/ey.svg" alt="" />
+							
+							{/* vertical divider */} <div className="inline-block h-[100px] min-h-[1em] w-0.5 self-stretch bg-gray-500 opacity-100 dark:opacity-50"></div>
+							
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/accenture-6.svg" alt="" />
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/ibm.svg" alt="" />
+							<img className="w-[150px]" src="https://www.boozallen.com/assets/boozallen_site/homepage/bah-logo-01.svg" alt="" />
+							<img className="w-[100px]" src="https://cdn.worldvectorlogo.com/logos/blloomberg.svg" alt="" />
 						</div>
 					</div>
 				</div>

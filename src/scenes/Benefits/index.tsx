@@ -87,8 +87,8 @@ const Benefits = ({setSelectedPage}: Props) => {
 				{/* Graphics and Description */}
 				<div className="mt-16 item-center justify-between gap-20 md:mt-28 md:flex">
 					{/* Graphic */}
-					<img src="" alt="benefits-page-graphic" 
-						className="mx-auto"
+					<img src="https://images.businessnewsdaily.com/app/uploads/2022/04/04074404/GettyImages-1133767597.jpg" alt="benefits-page-graphic" 
+						className="mx-auto w-80 h-100 rounded-3xl"
 					/>
 
 					{/* Description Container */}

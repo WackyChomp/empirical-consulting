@@ -25,13 +25,13 @@ function App() {
   
 
   return (
-    <div className="app" bg-gray-20>
+    <div className="app bg-gray-20">
       <Navbar 
         selectedPage={selectedPage} 
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
-      <p className='text-white'>Easter Egg OOC~~~~~ App be right here</p>
+      <p className='text-gray-20'>Easter Egg OOC~~~~~ App be right here</p>
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
     </div>
