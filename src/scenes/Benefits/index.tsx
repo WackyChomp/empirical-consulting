@@ -96,14 +96,34 @@ const Benefits = ({setSelectedPage}: Props) => {
 						{/* Title */}
 						<div className="relative">
 							<div className="uppercase before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
-								<HText>
-									Lets achieve more {' '}
-									<span className="text-primary-500">together</span>
-								</HText>
+								<motion.div
+									initial='hidden'
+									whileInView='visible'
+									viewport={{ once: true, amount: 0.5, }}
+									transition={{ delay: 0.2, duration: 1 }}
+									variants={{
+										hidden: { opacity:0, x:50 },
+										visible: { opacity:1, x:0 }
+									}}
+								>
+									<HText>
+										Lets achieve more {' '}
+										<span className="text-primary-500">together</span>
+									</HText>
+								</motion.div>
 							</div>
 						</div>
 						{/* Description */}
-						<div className="">
+						<motion.div 
+							initial='hidden'
+							whileInView='visible'
+							viewport={{ once: true, amount: 0.5, }}
+							transition={{ delay: 0.2, duration: 1 }}
+							variants={{
+								hidden: { opacity:0, x:-50 },
+								visible: { opacity:1, x:0 }
+							}}
+						>
 							<p className="my-5">
 								Sure you can accomplish your goals alone but it will take longer as a trade off.
 								You are bound to encounter roadblocks out of your control and this is where we step 
@@ -116,7 +136,8 @@ const Benefits = ({setSelectedPage}: Props) => {
 								either <b>free</b> or <b>affordable</b> depending on your situation. Our standards and commitment
 								to deliver platinum service and satisfaction.
 							</p>
-						</div>
+						</motion.div>
+						
 						{/* Button */}
 						<div className="relative mt-16">
 							<div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
