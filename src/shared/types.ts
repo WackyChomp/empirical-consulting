@@ -10,3 +10,9 @@ export enum SelectedPage {
     title: string;
     description: string;
   }
+
+  export interface DomainType{
+    name: string;
+    description?: string;     // ? makes data type optional
+    image: string
+  }
