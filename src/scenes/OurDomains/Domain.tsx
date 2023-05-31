@@ -21,7 +21,7 @@ const Domain = ({ name, description='Default description if nothing else :o', im
 				<p>{description}</p>
 			</div>
 
-			<img src={image} alt={`${image}`} />
+			<img className='h-[350px] w-[450px] rounded-lg' src={image} alt={`${image}`} />
 		</li>
   )
 }

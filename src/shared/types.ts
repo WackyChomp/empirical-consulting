@@ -1,5 +1,7 @@
 export enum SelectedPage {
     Home = 'home',
+    Benefits = 'benefits',
+    OurDomains = 'ourdomains',
     Perks = 'perks',
     Experts = 'experts',
     ContactUs = 'contactus'

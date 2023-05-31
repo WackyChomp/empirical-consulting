@@ -134,7 +134,7 @@ const Benefits = ({setSelectedPage}: Props) => {
 							<p className="my-5">
 								With us, you do not have to worry as we scour through every nook and cranny. Our services are 
 								either <b>free</b> or <b>affordable</b> depending on your situation. Our standards and commitment
-								to deliver platinum service and satisfaction.
+								involves delivering platinum service and satisfaction.
 							</p>
 						</motion.div>
 						

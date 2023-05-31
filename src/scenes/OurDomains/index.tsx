@@ -28,7 +28,7 @@ type Props = {
 const OurDomains = ({ setSelectedPage }: Props) => {
   return (
     <section id='ourdomains' className='w-full bg-primary-100 py-40'>
-			<motion.div onViewportEnter={() => setSelectedPage(SelectedPage)}>
+			<motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurDomains)}>
 				<motion.div className='mx-auto w-5/6'
 					initial='hidden'
 					whileInView='visible'
@@ -54,7 +54,7 @@ const OurDomains = ({ setSelectedPage }: Props) => {
 				</motion.div>
 
 				{/* --- Side-Scroller --- */}
-				<div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden">
+				<div className="mt-10 h-[380px] w-full overflow-x-auto overflow-y-hidden">
 					<ul className='w-[2800px] whitespace-nowrap'>		{/* child container with longer width than parent */}
 						{domains.map((item: DomainType, index) => (
 							<Domain 
