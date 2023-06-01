@@ -17,8 +17,8 @@ const Domain = ({ name, description='Default description if nothing else :o', im
 
 			{/* Overlays on top of individual image */}
 			<div className={overlayStyles}>
-				<p>{name}</p>
-				<p>{description}</p>
+				<p className="text-4xl">{name}</p>
+				<p className="mt-5">{description}</p>
 			</div>
 
 			<img className='h-[350px] w-[450px] rounded-lg' src={image} alt={`${image}`} />
