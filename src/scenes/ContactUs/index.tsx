@@ -9,7 +9,7 @@ type Props = {
 
 const ContactUs = (props: Props) => {
 
-	const inputStyles = `w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+	const inputStyles = `w-full rounded-lg bg-primary-300 px-5 py-3 mt-5 placeholder-white`;
 
 	const {
 		register, 
@@ -64,6 +64,7 @@ const ContactUs = (props: Props) => {
 						method='POST'
 						action='https://formsubmit.co/ENTER-EMAIL-HERE@EMAIL.COM'
 						>
+							{/* ------- Name ------- */}							
 							<input 
 								className={inputStyles}
 								type='text'
@@ -79,6 +80,45 @@ const ContactUs = (props: Props) => {
 									{errors.name.type === 'maxLength' && 'Max length is 100 characters!!!'}
 								</p>
 							)}
+							{/* ------- Email ------- */}							
+							<input 
+								className={inputStyles}
+								type='text'
+								placeholder="EMAIL"
+								{...register('email',{		// saved to email property for react-hook-form
+									required: true,
+									pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+								})}
+							/>
+							{errors.email && (
+								<p className="mt-1 text-primary-500">
+									{errors.email.type === 'required' && 'This field is required!!!'}
+									{errors.email.type === 'pattern' && 'Invalid email address!!!'}
+								</p>
+							)}
+							{/* ------- Message ------- */}							
+							<input 
+								className={inputStyles}
+								type='text'
+								placeholder="MESSAGE"
+								{...register('message',{		// saved to message property for react-hook-form
+									required: true,
+									maxLength: 3000,
+								})}
+							/>
+							{errors.message && (
+								<p className="mt-1 text-primary-500">
+									{errors.message.type === 'required' && 'This field is required!!!'}
+									{errors.message.type === 'maxLength' && 'Max length is 100 characters!!!'}
+								</p>
+							)}
+
+							<button 
+								type='submit'
+								className="uppercase mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+							>
+								Submit
+							</button>
 						</form>
 					</motion.div>
 				</div>
