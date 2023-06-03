@@ -97,9 +97,10 @@ const ContactUs = (props: Props) => {
 								</p>
 							)}
 							{/* ------- Message ------- */}							
-							<input 
+							<textarea
 								className={inputStyles}
-								type='text'
+								rows={4}
+								cols={50}
 								placeholder="MESSAGE"
 								{...register('message',{		// saved to message property for react-hook-form
 									required: true,

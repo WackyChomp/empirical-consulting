@@ -51,7 +51,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
 					{/* Call to Action (Button) */}
 					<motion.div 
-						className="mt-8 flex items-center gap-8"
+						className="mt-8 mb-8 flex items-center gap-8"
 						initial='hidden'
 						whileInView='visible'
 						viewport={{ once: true, amount: 0.5, }}
