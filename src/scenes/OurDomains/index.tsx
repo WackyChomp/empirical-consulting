@@ -17,7 +17,27 @@ const domains = [
 	{
 		name: 'Technology',
 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
-		image: ''
+		image: 'https://thumbs.dreamstime.com/b/ai-machine-learning-hands-robot-human-touching-big-data-network-connection-background-science-artificial-intelligence-172987598.jpg'
+	},
+	{
+		name: 'Science',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		image: 'https://cdn.vox-cdn.com/thumbor/k__m7gPXlaqBS_0oep_OnG2Op9Y=/0x0:1360x1021/1400x1050/filters:focal(680x511:681x512)/cdn.vox-cdn.com/uploads/chorus_asset/file/10776451/GettyImages_82770182.jpg'
+	},
+	{
+		name: 'Engineering',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		image: 'https://media.istockphoto.com/id/1263390703/photo/industrial-technology-concept-communication-network-industry-4-0-factory-automation.jpg?s=612x612&w=0&k=20&c=n_loGNBVEeCKEua8IthSRP6aFDj4z1FZOCC_wt-557o='
+	},
+	{
+		name: 'Marketing',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		image: 'https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?s=612x612&w=0&k=20&c=HYlIJ1VFfmHPwGkM3DtVIFNLS5ejfMMzEQ81ko534ak='
+	},
+	{
+		name: 'New Domain',
+		description: "Domain not listed? Become our first case study ambassador and we'll overcome this together!",
+		image: 'https://media.istockphoto.com/id/1345164057/photo/silhouette-of-a-male-person-in-front-of-a-question-mark.jpg?s=612x612&w=0&k=20&c=5oeLl0f_J9z0Kex5yJoduPDpd0ovqGGic97ZCtKzE_M='
 	},
 ]
 
