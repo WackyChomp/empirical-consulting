@@ -6,32 +6,32 @@ import Domain from './Domain';
 const domains = [
 	{
 		name: 'Business',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		description: 'Money makes the world go round. Learn and master how money works so you stay in control!',
 		image: 'https://www.avanade.com/-/media/images/blogs/inside-avanade/career-in-tech-consulting.jpg?vs=2&la=en'
 	},
 	{
 		name: 'Bodybuilding',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		description: "Our body is a temple that takes time and effort. Cultivate discipline so you don't have to think!",
 		image: 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif'
 	},
 	{
 		name: 'Technology',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		description: 'The digital world expands continuously given its ties with other domains. It is the new frontier of humanity and we have early access!',
 		image: 'https://thumbs.dreamstime.com/b/ai-machine-learning-hands-robot-human-touching-big-data-network-connection-background-science-artificial-intelligence-172987598.jpg'
 	},
 	{
 		name: 'Science',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		description: 'Science is the epitome of seeking knowledge and understanding our tangible world. Testing and challenging ideas is part of the iterative process and improving!',
 		image: 'https://cdn.vox-cdn.com/thumbor/k__m7gPXlaqBS_0oep_OnG2Op9Y=/0x0:1360x1021/1400x1050/filters:focal(680x511:681x512)/cdn.vox-cdn.com/uploads/chorus_asset/file/10776451/GettyImages_82770182.jpg'
 	},
 	{
 		name: 'Engineering',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		description: 'We solve problems and execute ideas of all sizes. This is all possible through the innovations of predecessors!',
 		image: 'https://media.istockphoto.com/id/1263390703/photo/industrial-technology-concept-communication-network-industry-4-0-factory-automation.jpg?s=612x612&w=0&k=20&c=n_loGNBVEeCKEua8IthSRP6aFDj4z1FZOCC_wt-557o='
 	},
 	{
 		name: 'Marketing',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores!',
+		description: "Societal consumption is at an all time high. We'll exceed demands and come out on top of the rat race!",
 		image: 'https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?s=612x612&w=0&k=20&c=HYlIJ1VFfmHPwGkM3DtVIFNLS5ejfMMzEQ81ko534ak='
 	},
 	{
