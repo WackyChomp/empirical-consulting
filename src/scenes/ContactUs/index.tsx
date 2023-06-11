@@ -9,7 +9,7 @@ type Props = {
 
 const ContactUs = (props: Props) => {
 
-	const inputStyles = `w-full rounded-lg bg-primary-300 px-5 py-3 mt-5 placeholder-white`;
+	const inputStyles = `w-full rounded-lg bg-primary-300 px-5 py-3 mb-5 placeholder-white`;
 
 	const {
 		register, 
@@ -49,7 +49,7 @@ const ContactUs = (props: Props) => {
 				{/* Form and Image */}
 				<div className="mt-10 justify-between gap-8 md:flex">
 					<motion.div
-						className="mt-10 basis-3/5 md:w-3/5"
+						className="basis-3/5 md:w-3/5"
 						initial='hidden'
 						whileInView='visible'
 						viewport={{ once: true, amount: 0.5, }}
@@ -62,7 +62,7 @@ const ContactUs = (props: Props) => {
 						<form target='_blank'
 						onSubmit={onSubmit}
 						method='POST'
-						action='https://formsubmit.co/ENTER-EMAIL-HERE@EMAIL.COM'
+						action='https://formsubmit.co/72116554c32fcf7fc1083fee1339f6c7'
 						>
 							{/* ------- Name ------- */}							
 							<input 

@@ -114,22 +114,17 @@ This section includes a list major frameworks/libraries used in this project:
 
 ### Prerequisites / Installation
 
-1. 
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/WackyChomp/empirical-consulting.git
    ```
-3. Install NPM packages into each client and server directories
+2. Install NPM packages into root directory or same directory as "<u>package.json</u>"
    ```sh
    npm install
    ```
-4. Enter your <u>API / Unique ID not public</u> in `.env` (root directory)
+3. Running on local computer
    ```
-    API_KEY = ENTER CREDENTIALS
-   ```
-5. Running on local computer
-   ```
-    root directory --- npm run dev
+    [Run this in root directory] --- npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -153,7 +148,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create captivating Hero section
+- [x] Create captivating Hero section
 - [ ] Establish all sections of SPA (single-page application)
 - [ ] Finalize color scheme
 - [ ] Finalize logo
@@ -206,6 +201,8 @@ List of amazing resources and big credits to:
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 * [Badge Shield](https://dev.to/envoy_/150-badges-for-github-pnk)
+<br><br>
+* [FormSubmit](https://formsubmit.co)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
