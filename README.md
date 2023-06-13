@@ -72,8 +72,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Product Name Screen Shot][product-screenshot]
 
+<br>
 Need help finding a direction, fleshing out ideas, or searching for purpose?
 <br><br>
 We all need a helping hand once in a while. Why internalize the negativity and bear the burden on your own when there are others out there who might share similar experiences or sentiments. We all have to start somewhere and this could be your first step of the journey. Bring that curiosity and determination here because everyone else will be exhibiting those qualities.
@@ -84,11 +85,11 @@ As long you have questions, we will continue to have answers 🔎
 <br><br>
 
 <u><b>Project Purpose / Vision:</b></u>
-* Sleek and responsive design for satisfying seamless user experience
 * Single-Page Application (SPA) with quick load time
-* Incorporated React hook forms to validate email submission for marketing newsletters, scheduling, and consultations
-* Deployed with <u>Cloudflare Pages</u> for accessibility and reliability no matter your situation
-* Utilizing open source, <u>Vite</u> for swift template setup, continuous updates, and transparent development
+* Sleek and responsive design for satisfying seamless user experience with <u><b>Tailwind CSS</u></b>
+* Incorporated <u><b>React Hook Forms</b></u> to validate email submission for marketing newsletters, scheduling, and consultations
+* Deployed with <u><b>Cloudflare Pages</b></u> for accessibility and reliability no matter your situation
+* Utilizing open source, <u><b>Vite</b></u> for swift template setup, continuous updates, and transparent development
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +113,7 @@ This section includes a list major frameworks/libraries used in this project:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites / Installation
+### Prerequisites / Setup
 
 1. Clone the repo
    ```sh
@@ -135,8 +136,8 @@ This section includes a list major frameworks/libraries used in this project:
 ## Usage
 
 <br>
-<p><u>Month Day, Year</u> - Description Here</p>
-<img src="./src/assets/" alt='---Image goes here' />
+<p><u>May 18th, 2023</u> - Hero Page with call to action button and list of "Imaginary Sponsors"</p>
+<img src="./src/assets/hero-page.png" alt='---Image goes here' />
 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
@@ -149,8 +150,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Create captivating Hero section
-- [ ] Establish all sections of SPA (single-page application)
-- [ ] Finalize color scheme
+- [x] Establish all sections of SPA (single-page application)
+- [x] Finalize color scheme
 - [ ] Finalize logo
 - [ ] Deploy project
     - [ ] 
@@ -203,6 +204,9 @@ List of amazing resources and big credits to:
 * [Badge Shield](https://dev.to/envoy_/150-badges-for-github-pnk)
 <br><br>
 * [FormSubmit](https://formsubmit.co)
+* [Framer Motion](https://github.com/framer/motion)
+* [React Hook Form](https://react-hook-form.com)
+* [Hero Icons](https://github.com/tailwindlabs/heroicons)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,6 +241,9 @@ List of amazing resources and big credits to:
 
 [Cloudflare-Page]: https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white
 [Cloudflare-Page-url]: https://pages.cloudflare.com/
+
+
+[product-screenshot]: ./src/assets/hero-page.png
 
 <!-- 
 * [![][]][]
