@@ -134,13 +134,14 @@ This section includes a list major frameworks/libraries used in this project:
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-<br>
 <p><u>May 18th, 2023</u> - Hero Page with call to action button and list of "Imaginary Sponsors"</p>
 <img src="./src/assets/hero-page.png" alt='---Image goes here' />
 
+<br />
+<br />
+<p><u>June 12th, 2023</u> - Full screenshot of the whole web page. Image does not properly showcase the animation and feel of the page.</p>
+<img src="./src/assets/full-web-page.jpg" alt='---Image goes here' />
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,6 +245,7 @@ List of amazing resources and big credits to:
 
 
 [product-screenshot]: ./src/assets/hero-page.png
+[full-web-page-screenshot]: ./src/assets/full-web-page.jpg
 
 <!-- 
 * [![][]][]
